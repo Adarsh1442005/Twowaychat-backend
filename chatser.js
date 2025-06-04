@@ -112,7 +112,7 @@ const server=http.createServer(app);
 
 const Io = new Server(server, {
     cors: {
-        origin: "https://twowaychat-backend.onrender.com",
+        origin: "https://twicecommunication-1.onrender.com",
         methods: ["GET", "POST"],
     },
 });
