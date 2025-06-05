@@ -133,8 +133,9 @@ const con=(socket)=>{
 
     };
     socket.on("register",register);
-    const priv=({recipientId,message})=>{
+    const priv=({recipientId,message,email})=>{
         console.log("receiptent id is ",recipientId)
+        if(users[email]){
            if(users[recipientId]){
             const send={text:message.text,sender:"client"}
              Io.to(users[recipientId]).emit("message",send);
@@ -142,8 +143,12 @@ const con=(socket)=>{
 
            }
            else{
-            console.log("receiver not found");
+            Io.to(users[email]).emit("receivererr",{code :0,message:"entered receiver id is not online activate yet"})
+           }}
+           else{
+            Io.to(socket.id).emit("usererr",{code:0, message:"please register yourself via your regstered email!!then start chating"})
            }
+
 
 
 
