@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use(express.json());
 Mongo();
-// mongoose.connect("mongodb+srv://aadi:1442005@cluster0.nc0yl.mongodb.net/twowaychat?retryWrites=true&w=majority&appName=Cluster0", { useNewUrlParser: true });
+// mongoose.connect("mongodb+srv://aadi:Adarsh1442005@cluster0.nc0yl.mongodb.net/twowaychat?retryWrites=true&w=majority&appName=Cluster0", { useNewUrlParser: true });
 console.log("mongodbconnected");
    const port = process.env.PORT || 8097;
 
