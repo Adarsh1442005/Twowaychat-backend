@@ -7,7 +7,7 @@ const con=()=>{
 const error=(err)=>{
     console.log("there is error in the connection",err);
 }
-mongoose.connect("mongodb+srv://aadi:1442005@cluster0.nc0yl.mongodb.net/twowaychat?retryWrites=true&w=majority&appName=Cluster0", {
+mongoose.connect("mongodb+srv://aadi:Adarsh1442005@cluster0.nc0yl.mongodb.net/twowaychat?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
