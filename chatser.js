@@ -112,7 +112,7 @@ const server=http.createServer(app);
 
 const Io = new Server(server, {
     cors: {
-        origin: "https://dual-link.onrender.com",
+        origin: "https://duallink.onrender.com",
         methods: ["GET", "POST"],
     },
 });
