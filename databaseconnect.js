@@ -7,10 +7,8 @@ const con=()=>{
 const error=(err)=>{
     console.log("there is error in the connection",err);
 }
-mongoose.connect("mongodb+srv://aadi:Adarsh1442005@cluster0.nc0yl.mongodb.net/twowaychat?retryWrites=true&w=majority&appName=Cluster0", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect("mongodb://Adarsh14:adarsh1442005@cluster0-shard-00-00.nc0yl.mongodb.net:27017,cluster0-shard-00-01.nc0yl.mongodb.net:27017,cluster0-shard-00-02.nc0yl.mongodb.net:27017/twowaychat?ssl=true&replicaSet=atlas-e016bb-shard-0&authSource=admin&appName=Cluster0")
+
 .then(con)
 .catch(error);}
 
